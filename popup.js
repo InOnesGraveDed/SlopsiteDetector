@@ -3,7 +3,7 @@ document.getElementById("addSite").addEventListener("click", async () => {
   const url = new URL(tab.url);
   const hostname = url.hostname;
   window.open(
-    `https://github.com/InOnesGraveDed/SlopsiteDetector/issues/new?title=Add ${hostname} to blacklist&body=Please add: ${hostname}`,
+    `https://github.com/InOnesGraveDed/SlopsiteDetector/issues/new?title=New blacklist request&body=Add: ${hostname}`,
     "_blank",
   );
 });
