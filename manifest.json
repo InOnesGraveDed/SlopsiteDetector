@@ -1,0 +1,15 @@
+{
+  "name": "Slopsite Detector",
+  "description": "Be warned of garbage AI-generated websites.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "./test.html",
+    "default_icon": "./images/16_test_icon.png"
+  },
+  "permissions": ["webNavigation", "scripting", "activeTab", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "./background.js"
+  }
+}
