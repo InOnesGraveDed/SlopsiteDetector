@@ -1,8 +1,8 @@
 let websiteList = [];
 
 async function loadWebsiteList() {
-  const response = await fetch(chrome.runtime.getURL("list"));
-  const text = await response.text();
+  const raw_list = await fetch(chrome.runtime.getURL("blacklist"));
+  const text = await raw_list.text();
   websiteList = text.split("\n").filter((line) => line.trim() !== "");
 }
 
